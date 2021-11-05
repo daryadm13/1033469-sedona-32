@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.page-header {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    text-align: center;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.filters {
+    background-color: #83B3D3;
+    background: url(../img/catalog-background-filters.jpg);
+    color: #ffffff;
+}
+
+.inner-header {
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+legend {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #756257;
+}
+
+.submit-button {
+    color: #ffffff;
+    background-color: #83B3D3;
+    line-height: 21px;
+}
+
+.reset-button {
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.searched {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.button-more {
+    background: #756257;
+    color: #ffffff;
+}
+
+.button-favorite {
+    background-color: #83B3D3;
+    color: #ffffff;
+}
+
+.favorited {
+    background-color: #7DB54F;
+}
+
+.rank {
+    text-align: center;
+    text-transform: uppercase;
+    background: #F2F2F2;
+}
+
+.pagination-link {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    background-color: #83B3D3;
+    color: #ffffff;
+}
+
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+footer {
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.mailing h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.mailing-button {
+    background-color: #83B3D3;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.button-show-more {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    background-color: #83B3D3;
+}
