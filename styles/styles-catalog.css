@@ -165,3 +165,8 @@ footer {
     text-align: center;
     background-color: #83B3D3;
 }
+
+.phone-number {
+    font-size: 40px;
+    line-height: 40px;
+}
