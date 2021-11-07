@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="styles/styles-catalog.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/grids.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             </ul>
 
             <a href="">
-                <img src="img/sedona.png" alt="Седона" width="138px" height="70.05px">
+                <img src="img/sedona.png" alt="Седона" width="138" height="70">
             </a>
 
             <ul class="navigation-list navigation-user">
@@ -57,7 +58,7 @@
             <ul class="pages">
                 <li class="pages-item">
                     <a class="pages-link" href="index.html">
-                        <img href="" alt="Главная" class="" width="12px" height="12px">
+                        <img href="" alt="Главная" class="" width="12" height="12">
                     </a>
                 </li>
                 <li class="pages-item">
@@ -66,7 +67,7 @@
             </ul>
         </header>
         <section class="filters">
-            <h2 class="visually-hidden"> Фильтры </h2>
+            <h2 class="visually-hidden h2"> Фильтры </h2>
             <form class="filters-form">
                 <fieldset class="filter-group">
                     <legend class="filter-title"> Инфраструктра: </legend>
@@ -121,29 +122,31 @@
             </form>
         </section>
         <section class="hotels">
-            <h2 class="visually-hidden"> Результаты поиска </h2>
-            <p class="searched"> Найдено гостиниц: </p>
-            <form class="sorting-form">
-                <label class="visually-hidden" for="sorting"> Сортировка  </label>
-                <select class="" name="sorting" id="sorting">
-                    <option value="cheap"> Сначала дешёвые </option>
-                    <option value="expensive"> Сначала дорогие </option>
-                    <option value="popular"> Сначала популярные </option>
-                </select>
-            </form>
-            <a href="#" class="button">
-                <span class="visually-hidden"> Таблица </span>
-            </a>
-            <a href="#" class="button">
-                <span class="visually-hidden"> По одному </span>
-            </a>
-            <a href="#" class="button">
-                <span class="visually-hidden"> Список </span>
-            </a>
+            <h2 class="visually-hidden h2"> Результаты поиска </h2>
+            <div class="hotel-list-head">
+                <p class="searched"> Найдено гостиниц: </p>
+                <form class="sorting-form">
+                    <label class="visually-hidden" for="sorting"> Сортировка  </label>
+                    <select class="" name="sorting" id="sorting">
+                        <option value="cheap"> Сначала дешёвые </option>
+                        <option value="expensive"> Сначала дорогие </option>
+                        <option value="popular"> Сначала популярные </option>
+                    </select>
+                </form>
+                <a href="#" class="button">
+                    <span class="visually-hidden"> Таблица </span>
+                </a>
+                <a href="#" class="button">
+                    <span class="visually-hidden"> По одному </span>
+                </a>
+                <a href="#" class="button">
+                    <span class="visually-hidden"> Список </span>
+                </a>
+            </div>
             <ul class="hotels-list">
                 <li class="hotels-item">
                     <div class="hotel-card">
-                        <img src="img/amara-resort.jpg" class="hotel-pic" width="180px" height="120px">
+                        <img src="img/amara-resort.jpg" class="hotel-pic" width="180" height="120">
                         <div class="hotel-description">
                             <h3 class="hotel-name"> Amara Resort & Spa</h3>
                             <p class="hotel-type"> Гостиница </p>
@@ -159,7 +162,7 @@
                 </li>
                 <li class="hotels-item">
                     <div class="hotel-card">
-                        <img src="img/desert-quail.jpg" class="hotel-pic" width="180px" height="120px">
+                        <img src="img/desert-quail.jpg" class="hotel-pic" width="180" height="120">
                         <div class="hotel-description">
                             <h3 class="hotel-name"> Desert Quail Inn </h3>
                             <p class="hotel-type"> Мотель </p>
@@ -175,7 +178,7 @@
                 </li>
                 <li class="hotels-item">
                     <div class="hotel-card">
-                        <img src="img/villas-at-poco.jpg" class="hotel-pic" width="180px" height="120px">
+                        <img src="img/villas-at-poco.jpg" class="hotel-pic" width="180" height="120">
                         <div class="hotel-description">
                             <h3 class="hotel-name"> Villas at Poco Diablo </h3>
                             <p class="hotel-type"> Апартаменты </p>
@@ -191,7 +194,7 @@
                 </li>
                 <li class="hotels-item">
                     <div class="hotel-card">
-                        <img src="img/greentree.jpg" class="hotel-pic" width="180px" height="120px">
+                        <img src="img/greentree.jpg" class="hotel-pic" width="180" height="120">
                         <div class="hotel-description">
                             <h3 class="hotel-name"> GreenTree Inn </h3>
                             <p class="hotel-type"> Гостиница </p>
@@ -229,7 +232,7 @@
                 </li>
             </ul>
             <form>
-                <label for="num-per-page"> Гостиниц на странице</label>
+                <label for="num-per-page" class="num-per-page"> Гостиниц на странице</label>
                 <select name="num-per-page">
                     <option> 4 </option>
                     <option> 8 </option>
@@ -242,11 +245,11 @@
     </main>
 
     <footer class="page-footer">
-        <section class="mailing">
-            <h2>
+        <section class="catalog mailing">
+            <h2 class="h2">
                 Подпишитесь на рассылку
             </h2>
-            <p>
+            <p class="mailing-text">
                 Только полезная информация и никакого спама, честное бойскаутское!
             </p>
             <form class="mailing-form">
@@ -280,7 +283,7 @@
             <a class="phone-number" href="tel: +78128121212"> +7 (812) 812-12-12 </a>
 
             <a class="html-academy" href="https://htmlacademy.ru/">
-                <img src="img/logo_htmlacademy.png" class="academy-logo" href="#" alt="html academy" width="115px" height="34px">
+                <img src="img/logo_htmlacademy.png" class="academy-logo" href="#" alt="html academy" width="115" height="34">
             </a>
         </section>
     </footer>
