@@ -14,12 +14,104 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
     background-color: #ffffff;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.main-navigation {
+    display: flex;
+    margin: 0 auto;
+    width: 1056px;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.sedona-logo {
+    margin: 0 auto;
+}
+
+.page-container {
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.welcome {
+    display: block;
+    margin: 0 auto;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer-container {
+    width: 1056px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts .phone-number {
+    margin: 0 auto;
+}
+
+.filters-form {
+    display: flex;
+}
+
+.hotel-list-head {
+    display: flex;
+}
+
+.page-navigation {
+    display: flex;
+    margin: 0;
+}
+
+.hotels {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination {
+    margin-right: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.pagination-item {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-color: #83B3D3;
+    text-align: center;
+}
+
+.pagination-current-item {
+    background-color: #F2F2F2;
 }
 
 .main-index {
@@ -192,9 +284,10 @@ body {
     text-align: center;
     background-color: #83B3D3;
     color: #ffffff;
+    text-decoration: none;
 }
 
-.pagination-current {
+.pagination-current-link {
     color: #000000;
     background-color: #F2F2F2;
 }
@@ -205,6 +298,7 @@ body {
     line-height: 26px;
     text-align: center;
     background-color: #83B3D3;
+    align-self: center;
 }
 
 .filter-title {
