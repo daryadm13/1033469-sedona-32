@@ -317,6 +317,7 @@ body {
 
 .real-town-img {
     grid-area: photo;
+    display: block;
 }
 
 .real-town .advantages-description {
@@ -347,6 +348,7 @@ body {
 
 .devil-bridge-img {
     grid-column: 1/3;
+    display: block;
 }
 
 .advantages-item:nth-child(3) {
