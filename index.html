@@ -12,8 +12,8 @@
         <header class="page-header">
             <nav class="main-navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a href="index.html" class="navigation-link navigation-link-current"> Главная </a>
+                    <li class="navigation-item navigation-item-current">
+                        <a href="index.html" class="navigation-link"> Главная </a>
                     </li>
                     <li class="navigation-item">
                         <a href="#" class="navigation-link">О Седоне </a>
@@ -29,40 +29,44 @@
 
                 <ul class="navigation-list navigation-user">
                     <li class="navigation-item">
-                        <a href="#" class="navigation-link">
+                        <a href="#" class="navigation-link search-icon">
                             <span class="visually-hidden">
                             Поиск
                         </span>
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-link">
+                        <a href="#" class="navigation-link favorite-icon">
                             <span class="visually-hidden">
                             Избранное
                         </span>
                         </a>
-                        <div class="popover popover-cart">
+                        <div class="popover popover-cart -popover-open">
                             <span class="triangle"></span>
                             <ul class="favorite-hotel-list">
                                 <li class="favorite-hotel-item">
-                                    <img src="img/desert_small.jpg" class="favorite-hotel-pic" alt="Desert Quail Inn" width="48" height="48">
-                                    <div class="favorite-hotel-description">
-                                        <p class="favorite-hotel-name"> Desert Quail Inn </p>
-                                        <p class="favorite-hotel-type"> Мотель </p>
-                                    </div>
-                                    <a href="#" class="button-delete">
+                                    <a class="favorite-hotel" href="#">
+                                        <img src="img/desert-small.jpg" class="favorite-hotel-pic" alt="Desert Quail Inn" width="48" height="48">
+                                        <div class="favorite-hotel-description">
+                                            <p class="favorite-hotel-name"> Desert Quail Inn </p>
+                                            <p class="favorite-hotel-type"> Мотель </p>
+                                        </div>
+                                    </a>
+                                    <button type="button" class="button-delete">
                                         <span class="visually-hidden"> Удалить </span>
                                     </a>
                                 </li>
                                 <li class="favorite-hotel-item">
-                                    <img src="img/villas_small.jpg" class="favorite-hotel-pic" alt="Villas at Poco Diablo" width="48" height="48">
-                                    <div class="favorite-hotel-description">
-                                        <p class="favorite-hotel-name"> Villas at Poco Diablo </p>
-                                        <p class="favorite-hotel-type"> Апартаменты </p>
-                                    </div>
-                                    <a href="#" class="button-delete">
-                                        <span class="visually-hidden"> Удалить </span>
+                                    <a class="favorite-hotel" href="#">
+                                        <img src="img/villas-small.jpg" class="favorite-hotel-pic" alt="Villas at Poco Diablo" width="48" height="48">
+                                        <div class="favorite-hotel-description">
+                                            <p class="favorite-hotel-name"> Villas at Poco Diablo </p>
+                                            <p class="favorite-hotel-type"> Апартаменты </p>
+                                        </div>
                                     </a>
+                                    <button type="button" class="button-delete">
+                                        <span class="visually-hidden"> Удалить </span>
+                                    </button>
                                 </li>
                             </ul>
                             <a class="all-favorite button">
@@ -220,10 +224,10 @@
                     </p>
                     <form class="mailing-form">
                         <p class="mailing-email">
-                            <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-email" required>
+                            <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-email">
                         </p>
                         <button class="mailing-button button" type="submit">
-                        Подписаться
+                            Подписаться
                         </button>
                     </form>
                 </section>
@@ -249,7 +253,7 @@
                     <a href="tel:+78128121212" class="phone-number"> +7 (812) 812-12-12 </a>
 
                     <a class="html-academy" href="https://htmlacademy.ru/">
-                        <img src="img/logo_htmlacademy.png" class="academy-logo" alt="html academy" width="115" height="34">
+
                     </a>
                 </section>
             </div>
