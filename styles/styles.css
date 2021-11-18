@@ -625,8 +625,11 @@ body {
 
 .navigation-link:hover,
 .navigation-link:focus,
-.navigation-link:active {
-    color: rgba(0, 0, 0, 0.5);
+.navigation-link:active,
+.phone-number:hover,
+.phone-number:active,
+.phone-number:focus {
+    color: #83B3D3;
 }
 
 .button:hover,
@@ -650,10 +653,7 @@ body {
 
 .pagination-current-link:hover,
 .pagination-current-link:active,
-.pagination-current-link:focus,
-.phone-number:hover,
-.phone-number:active,
-.phone-number:focus {
+.pagination-current-link:focus {
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -827,6 +827,8 @@ body {
     text-decoration: none;
     display: block;
     padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 4px;
 }
 
 .pagination-current-link {
@@ -1038,7 +1040,7 @@ body {
     color: #000000;
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
-    height: 60px;
+    min-height: 60px;
 }
 
 .mailing-form .mailing-button {
@@ -1222,13 +1224,6 @@ body {
     margin: 0;
 }
 
-.mailing-form:hover,
-.mailing-form:active,
-.mailing-form:focus {
-    border: 1px solid #83B3D3;
-    border-radius: 10px;
-}
-
 .navigation-item {
     position: relative;
 }
@@ -1377,14 +1372,14 @@ body {
 .modal-close-button:hover,
 .modal-close-button:active,
 .modal-close-button:focus {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .modal-close-button::before,
 .modal-close-button::after {
     position: absolute;
-    top: 24px;
-    left: 18px;
+    top: 25px;
+    left: 19px;
     width: 16px;
     height: 2px;
     background-color: #242424;
@@ -1529,10 +1524,10 @@ body {
     display: block;
 }
 
-.field:hover,
-.field:active,
-.field:focus {
-    border: 2px solid #83B3D3;
+.mailing-form .field:hover,
+.mailing-form .field:active,
+.mailing-form .field:focus {
+    background-color: #f4faff;
 }
 
 .field[type="number"]::-webkit-outer-spin-button,
@@ -1600,4 +1595,48 @@ body {
 .plus-2 {
     z-index: 1;
     left: 610px;
+}
+
+.control-input:disabled+.control-mark {
+    background-color: rgb(201, 173, 173);
+}
+
+.button:disabled {
+    background-color: rgb(145, 143, 143);
+}
+
+.button:disabled:hover,
+.button:disabled:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: default;
+}
+
+.mailing-form .field:disabled,
+.cost:disabled,
+.num-per-page-options:disabled {
+    background-color: rgb(145, 143, 143);
+    color: #ffffff;
+    cursor: default;
+    border-color: #ffffff;
+}
+
+.sorting:disabled {
+    background-color: rgb(145, 143, 143);
+    color: #ffffff;
+}
+
+.modal .field:hover,
+.modal .field:focus,
+.modal .field:active {
+    background-color: #f4faff;
+}
+
+.button-disabled,
+.modal .field:disabled,
+.info:disabled,
+.modal .field:hover:disabled,
+.info:hover:disabled {
+    background-color: rgb(145, 143, 143);
+    cursor: default;
 }
