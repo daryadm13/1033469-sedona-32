@@ -41,7 +41,7 @@
                             Избранное
                         </span>
                         </a>
-                        <div class="popover popover-cart -popover-open">
+                        <div class="popover popover-cart popover-open">
                             <span class="triangle"></span>
                             <ul class="favorite-hotel-list">
                                 <li class="favorite-hotel-item">
@@ -54,7 +54,7 @@
                                     </a>
                                     <button type="button" class="button-delete">
                                         <span class="visually-hidden"> Удалить </span>
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="favorite-hotel-item">
                                     <a class="favorite-hotel" href="#">
@@ -69,7 +69,7 @@
                                     </button>
                                 </li>
                             </ul>
-                            <a class="all-favorite button">
+                            <a class="all-favorite button" href="#">
                                 <div class="all-favotite-text">ВСЕ ИЗБРАННЫЕ</div>
                             </a>
                         </div>
@@ -222,9 +222,9 @@
                     <p class="mailing-text">
                         Только полезная информация и никакого спама, <br> честное бойскаутское!
                     </p>
-                    <form class="mailing-form">
+                    <form class="mailing-form" action="https://echo.htmlacademy.ru/">
                         <p class="mailing-email">
-                            <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-email">
+                            <input class="field email-field" placeholder="Ваш e-mail" type="email" name="mailing-email">
                         </p>
                         <button class="mailing-button button" type="submit">
                             Подписаться
@@ -265,7 +265,7 @@
                 </button>
                 <section class="modal-content">
                     <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-                    <form class="modal-form" action="" method="post">
+                    <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
                         <div class="field-group">
                             <label for="date-start"> Дата заезда:</label>
                             <input class="field" type="text" id="date-start" name="date-start" placeholder="01.01.2020" value="27 апреля 2020">
@@ -278,22 +278,22 @@
                         </div>
                         <div class="field-group">
                             <label for="num-adults"> Взрослые:</label>
-                            <input class="field" type="number" id="num-adults" name="num-adults" value="2" min="0">
-                            <div class="plus plus-1"> </div>
-                            <div class="plus plus-2"> </div>
+                            <input class="field adult-field" type="number" id="num-adults" name="num-adults" value="2" min="0">
                             <div class="minus minus-1"> </div>
+                            <div class="plus plus-1"> </div>
+                            <div class="children">
+                                <label for="num-children"> Дети: </label>
+                                <button class="info" type="button">
+                                    i
+                                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                                </button>
+                                <p class="info-pop">
+                                    <span class="modal-triangle"></span> Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                                </p>
+                            </div>
+                            <input class="field children-field" type="number" id="num-children" name="num-children" value="1" min="0">
                             <div class="minus minus-2"> </div>
-                            <span class="children">
-                            <label for="num-children"> Дети: </label>
-                            <button class="info" type="button">
-                                i
-                                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                            </button>
-                            <p class="info-pop">
-                                <span class="modal-triangle"></span> Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                            </p>
-                            </span>
-                            <input class="field" type="number" id="num-children" name="num-children" value="1" min="0">
+                            <div class="plus plus-2"> </div>
                         </div>
                         <button class="button modal-form-submit" type="submit">Найти</button>
                     </form>
