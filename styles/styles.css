@@ -1324,6 +1324,10 @@
         margin: 0;
     }
     
+    .favorite-hotel-pic {
+        border-radius: 50%;
+    }
+    
     .favorite-hotel-type {
         padding: 0;
         margin: 0;
