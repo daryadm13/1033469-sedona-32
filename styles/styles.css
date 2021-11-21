@@ -971,7 +971,7 @@
         display: block;
     }
     
-    .pages .pages-item:nth-child(1) .pages-link {
+    .pages-item:nth-child(1) .pages-link {
         min-width: 22px;
         min-height: 22px;
         background-image: url('../img/home.svg');
